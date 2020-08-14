@@ -92,6 +92,7 @@ body {
 }
 .site-nav a:hover,
 .site-nav a:focus {
+  transition: 250ms;
   color: var(--primary-button-color);
 }
 .site-nav-list {
@@ -140,7 +141,10 @@ body {
   margin-left: 0px;
 }
 .mail-link:hover,
-.tel-link:hover {
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  transition: 250ms;
   color: var(--mail-tel-hover-color);
   fill: var(--mail-tel-hover-color);
 }
@@ -158,6 +162,7 @@ body {
 
 .button:hover,
 .button:focus {
+  transition: 250ms;
   cursor: pointer;
   background: var(--hover-color);
 }
@@ -250,7 +255,9 @@ body {
   background-color: var(--footer-icon-background-color);
   fill: var(--footer-icon-fill);
 }
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
+  transition: 250ms;
   background-color: var(--socials-hover-color);
   fill: var(--socials-hover-fill);
 }
