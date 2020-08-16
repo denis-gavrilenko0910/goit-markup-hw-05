@@ -89,7 +89,7 @@ projects-link {
   border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
-  overflow: hidden;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list:hover {
@@ -127,8 +127,12 @@ projects-link {
 }
 .projects-link {
   width: 370px;
-  position: relative;
+
   color: var(--primary-text-color);
+}
+.hidden-text-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .description {
@@ -152,7 +156,8 @@ projects-link {
   letter-spacing: 0.03em;
 }
 
-.projects-link:hover .description {
+.projects-link:hover .description,
+.projects-link:focus .description {
   opacity: 1;
   transform: translateY(0%);
 }

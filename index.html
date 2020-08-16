@@ -74,14 +74,12 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open class="button">Заказать услугу</button>
+          <button type="button" class="button open" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
-      <div data-modal class="backdrop is-hidden">
-        <div class="modal">
-          <button data-modal-close>Закрыть</button>
-        </div>
-      </div>
+
       <!-- Особенности -->
 
       <section class="section">
@@ -513,6 +511,13 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="button-close" data-modal-close>
+            Закрыть
+          </button>
+        </div>
+      </div>
     </main>
 
     <!--Подвал-->
