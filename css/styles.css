@@ -637,7 +637,7 @@ img {
 }
 
 .modal_input:focus-within + .input_icon {
-  fill: var(--primary);
+  fill: #4D5AE5;
 }
 
 .modal_lable {
@@ -725,7 +725,7 @@ textarea::placeholder {
 }
 
 .checkbox_hidden:focus-visible + .modal_lable > .checkbox_visible {
-  outline: 1px solid var(--primary);
+  outline: 1px solid #4D5AE5;
   outline-offset: 2px;
 }
 
