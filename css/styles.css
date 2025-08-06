@@ -718,14 +718,14 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.checkbox_hidden:checked + .modal_lable > .checkbox_visible {
+.checkbox_hidden:checked + .modal_lable > span {
   background-color: var(--pressed);
   border: none;
   fill: var(--light);
 }
 
 .checkbox_hidden:focus-visible + .modal_lable > .checkbox_visible {
-  outline: 1px solid #4D5AE5;
+  outline: 1px solid var(--primary);
   outline-offset: 2px;
 }
 
