@@ -588,7 +588,7 @@ img {
   margin-bottom: 16px;
 }
 
-.modal_input:focus-within {
+.modal_input:focus {
   border-color: var(--primary);
   color: var(--primary);
 }
