@@ -271,6 +271,10 @@ img {
   margin-bottom: 8px;
 }
 
+.principles_icon {
+  fill: var(--primary);
+}
+
 .team {
   background-color: var(--light);
 }
@@ -558,6 +562,8 @@ img {
 
 .modal_close_btn:hover .modal_svg,
 .modal_close_btn:focus .modal_svg {
+  border: none;
+  background-color: var(--pressed);
   fill: var(--white);
 }
 
@@ -593,7 +599,7 @@ img {
   color: var(--primary);
 }
 
-.modal_input:focus-within + .input_icon {
+.modal_input:focus + .input_icon {
   fill: var(--primary);
 }
 
