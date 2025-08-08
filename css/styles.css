@@ -632,10 +632,15 @@ img {
   left: 16px;
   fill: var(--dark);
   transition: fill var(--transition-default);
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
-textarea.modal_input {
+.input_icon:hover,
+.input_icon:focus {
+  fill: var(--primary);
+}
+
+.textarea {
   resize: none;
   padding: 8px 16px;
   height: 120px;
@@ -649,7 +654,7 @@ textarea.modal_input {
   border-color: #4D5AE5
 }
 
-textarea::placeholder {
+.textarea::placeholder {
   color: var(--modal-overlay);
 }
 
