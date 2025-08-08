@@ -248,7 +248,8 @@ img {
 .primary_button:hover,
 .primary_button:focus,
 .primary_button:active {
-  background-color: var(--pressed);
+  background-color: #404bbf;
+  border: none;
 }
 
 .principles_cards_grid {
@@ -632,7 +633,6 @@ img {
   left: 16px;
   fill: var(--dark);
   transition: fill var(--transition-default);
-  /* pointer-events: none; */
 }
 
 .input_icon:hover,
