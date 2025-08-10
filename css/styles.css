@@ -551,9 +551,10 @@ img {
 
 .modal_close_btn:hover,
 .modal_close_btn:focus {
-  background-color: var(--pressed);
+  background-color: #404bbf;
   border: none;
   color: var(--white);
+  fill: #ffffff;
 }
 
 .modal_close_icon {
@@ -564,8 +565,8 @@ img {
 .modal_close_btn:hover .modal_svg,
 .modal_close_btn:focus .modal_svg {
   border: none;
-  background-color: var(--pressed);
-  fill: var(--white);
+  background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .modal_overlay.is_open {
@@ -574,7 +575,7 @@ img {
   pointer-events: auto;
 }
 
-.modal_overlay:not(.is_open) .modal {
+.modal_overlay:not(.is_open) .modal_user_contacts {
   transform: translate(-50%, -150%);
 }
 
@@ -641,13 +642,18 @@ img {
 }
 
 .textarea {
-  resize: none;
-  padding: 8px 16px;
+  outline: transparent;
+  background-color: transparent;
+  border: 1px solid var(--modal-overlay);
+  border-radius: 4px;
+  width: 100%;
   height: 120px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--modal-overlay);
+  transition: border-color var(--transition-default);
 }
 
 .modal_input:focus {
@@ -656,6 +662,10 @@ img {
 
 .textarea::placeholder {
   color: var(--modal-overlay);
+}
+
+.textarea:focus {
+  border-color: #4D5AE5;
 }
 
 .policy_wrapper {
@@ -693,7 +703,7 @@ img {
 }
 
 .checkbox_hidden:checked + .modal_lable > .checkbox_visible {
-  background-color: #404bbf;
+  background-color: var(--pressed);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--light);
 }
