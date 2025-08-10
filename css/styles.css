@@ -59,11 +59,6 @@ img {
   max-width: 100%;
 }
 
-input {
-  background-color: transparent;
-  border: none;
-}
-
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -565,25 +560,26 @@ input {
 .modal_close_btn:hover {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal_close_btn:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
-
-/* .modal_close_icon {
+.modal_close_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .modal_close_icon:hover {
-    fill: #ffffff;
-    }
-    
-    .modal_close_icon:focus {
-      fill: #ffffff;
-      } */
+}
+
+.modal_close_icon:hover {
+  fill: #ffffff;
+}
+
+.modal_close_icon:focus {
+  fill: #ffffff;
+}
 
 .modal_overlay.is_open {
   opacity: 1;
@@ -646,9 +642,8 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input_icon:hover,
-.input_icon:focus {
-  fill: var(--primary);
+.input_icon:hover {
+  fill: #4d5ae5;
 }
 
 .textarea {
@@ -673,8 +668,8 @@ input {
 
 .modal_input:focus,
 .modal_input:focus + .input_icon {
-  border-color: var(--primary);
-  fill: var(--primary);
+  fill: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .policy_wrapper {
@@ -715,16 +710,4 @@ input {
   background-color: var(--pressed);
   border: none;
   fill: var(--light);
-}
-
-.modal_close_btn:hover svg {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
-
-.modal_close_btn:focus svg {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
 }
