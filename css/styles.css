@@ -564,8 +564,6 @@ img {
 
 .modal_close_btn:hover .modal_svg,
 .modal_close_btn:focus .modal_svg {
-  border: none;
-  background-color: #404bbf;
   fill: #ffffff;
 }
 
@@ -597,7 +595,7 @@ img {
 }
 
 .modal_input:focus + .input_icon {
-  fill: var(--primary);
+  fill: #4D5AE5;
   border-color: var(--primary);
   color: var(--primary);
 }
@@ -657,7 +655,7 @@ img {
 }
 
 .modal_input:focus {
-  border-color: #4D5AE5
+  border-color: #4D5AE5;
 }
 
 .textarea::placeholder {
