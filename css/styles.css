@@ -638,7 +638,6 @@ img {
   transform: translateY(-50%);
   left: 16px;
   fill: #2e2f42;
-  ;
   transition: fill var(--transition-default);
 }
 
@@ -705,12 +704,12 @@ img {
 }
 
 .checkbox_hidden:focus-visible + .modal_lable > .checkbox_visible {
-  outline: 1px solid #4d5ae5;
+  outline: 1px solid var(--primary);
   outline-offset: 2px;
 }
 
 .checkbox_hidden:checked + .modal_lable > .checkbox_visible {
-  background-color: #404bbf;
+  background-color: var(--pressed);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--light);
 }
