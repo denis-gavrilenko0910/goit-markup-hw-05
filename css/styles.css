@@ -565,26 +565,25 @@ input {
 .modal_close_btn:hover {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
 .modal_close_btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
-.modal_close_icon {
+
+/* .modal_close_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal_close_icon:hover {
-  fill: #ffffff;
-}
-
-.modal_close_icon:focus {
-  fill: #ffffff;
-}
+  }
+  
+  .modal_close_icon:hover {
+    fill: #ffffff;
+    }
+    
+    .modal_close_icon:focus {
+      fill: #ffffff;
+      } */
 
 .modal_overlay.is_open {
   opacity: 1;
@@ -716,4 +715,16 @@ input {
   background-color: var(--pressed);
   border: none;
   fill: var(--light);
+}
+
+.modal_close_btn:hover svg {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal_close_btn:focus svg {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
