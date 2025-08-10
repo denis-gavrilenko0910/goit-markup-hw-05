@@ -608,10 +608,6 @@ img {
   margin-bottom: 16px;
 }
 
-.modal_input:focus + .input_icon {
-  fill: #4D5AE5;
-}
-
 .modal_lable {
   font-size: 12px;
   line-height: 1.17;
@@ -624,15 +620,6 @@ img {
 
 .modal_input_wrapper {
   position: relative;
-}
-
-.modal_input_wrapper:focus-within .input_icon {
-  fill: #4D5AE5;
-}
-
-.modal_input_wrapper:focus-within .input_icon *,
-.modal_input:focus ~ .input_icon * {
-  fill: #4D5AE5;
 }
 
 .modal_input {
@@ -652,12 +639,16 @@ img {
   transform: translateY(-50%);
   left: 16px;
   fill: #2e2f42;
-  transition: fill var(--transition-default);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input_icon:hover,
-.input_icon:focus {
-  fill: var(--primary);
+.modal_input:focus + .input_icon {
+  fill: #4D5AE5;
+  border-color: #4D5AE5;
+}
+
+.input_icon:hover {
+  fill: #4D5AE5;
 }
 
 .textarea {
@@ -676,16 +667,12 @@ img {
   transition: border-color var(--transition-default);
 }
 
-.modal_input:focus {
+textarea:focus {
   border-color: #4D5AE5;
 }
 
 .textarea::placeholder {
   color: var(--modal-overlay);
-}
-
-textarea:focus {
-  border-color: #4D5AE5;
 }
 
 .policy_wrapper {
