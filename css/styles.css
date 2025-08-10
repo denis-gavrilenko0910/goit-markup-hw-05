@@ -623,15 +623,6 @@ img {
   position: relative;
 }
 
-.modal_input_wrapper:focus-within .input_icon {
-  fill: #4D5AE5;
-}
-
-.modal_input_wrapper:focus-within .input_icon *,
-.modal_input:focus ~ .input_icon * {
-  fill: #4D5AE5;
-}
-
 .modal_input {
   outline: transparent;
   background-color: transparent;
@@ -681,7 +672,7 @@ img {
   color: var(--modal-overlay);
 }
 
-textarea:focus {
+.textarea:focus {
   border-color: #4D5AE5;
 }
 
