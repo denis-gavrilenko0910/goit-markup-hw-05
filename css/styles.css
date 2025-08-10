@@ -578,13 +578,13 @@ img {
   fill: #ffffff;
 }
 
-.modal_overlay.is_open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-.modal_overlay:not(.is_open) .modal_user_contacts {
+.modal_overlay:not(.is-open) .modal_user_contacts {
   transform: translate(-50%, -150%);
 }
 
@@ -709,4 +709,8 @@ img {
   background-color: var(--pressed);
   border: none;
   fill: var(--light);
+}
+
+.checkbox_hidden:checked + .modal_lable > .checkbox_visible .checkbox_custom_icon {
+  fill: #fff;
 }
