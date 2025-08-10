@@ -684,7 +684,7 @@ img {
   color: var(--modal-overlay);
 }
 
-.textarea:focus {
+textarea:focus {
   border-color: #4D5AE5;
 }
 
